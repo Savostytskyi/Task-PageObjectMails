@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MailSuite]">
+  <test name="mails(failed)">
+    <classes>
+      <class name="mail.MailGmailTests">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- mail.MailGmailTests -->
+      <class name="mail.MailYandexTests">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beginCreationOfLetter"/>
+          <include name="loginToMail"/>
+          <include name="checkTheLetter"/>
+          <include name="sendTheLetter"/>
+        </methods>
+      </class> <!-- mail.MailYandexTests -->
+      <class name="mail.MailIUATests">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beginCreationOfLetter"/>
+          <include name="loginToMail"/>
+          <include name="checkTheLetter"/>
+          <include name="sendTheLetter"/>
+        </methods>
+      </class> <!-- mail.MailIUATests -->
+    </classes>
+  </test> <!-- mails(failed) -->
+</suite> <!-- Failed suite [MailSuite] -->
