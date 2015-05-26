@@ -5,20 +5,12 @@
     <classes>
       <class name="mail.MailGmailTests">
         <methods>
-          <include name="beforeClass"/>
-          <include name="beforeSuite"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- mail.MailGmailTests -->
-      <class name="mail.MailYandexTests">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="beginCreationOfLetter"/>
           <include name="loginToMail"/>
           <include name="checkTheLetter"/>
+          <include name="beginCreationOfLetter"/>
           <include name="sendTheLetter"/>
         </methods>
-      </class> <!-- mail.MailYandexTests -->
+      </class> <!-- mail.MailGmailTests -->
       <class name="mail.MailIUATests">
         <methods>
           <include name="beforeClass"/>
@@ -28,6 +20,14 @@
           <include name="sendTheLetter"/>
         </methods>
       </class> <!-- mail.MailIUATests -->
+      <class name="mail.MailYandexTests">
+        <methods>
+          <include name="beginCreationOfLetter"/>
+          <include name="loginToMail"/>
+          <include name="checkTheLetter"/>
+          <include name="sendTheLetter"/>
+        </methods>
+      </class> <!-- mail.MailYandexTests -->
     </classes>
   </test> <!-- mails(failed) -->
 </suite> <!-- Failed suite [MailSuite] -->

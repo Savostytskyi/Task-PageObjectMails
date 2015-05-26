@@ -3,7 +3,6 @@
 <suite name="MailSuite">
 	<test name="mails">
 		<classes>
-			<class name="driver.DriverInit"/>
 			<class name="mail.MailIUATests"/>
 			<class name="mail.MailYandexTests"/>
 			<class name="mail.MailGmailTests"/>

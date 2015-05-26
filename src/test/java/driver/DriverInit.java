@@ -29,13 +29,13 @@ public class DriverInit {
 			driver = new FirefoxDriver();
 			break;
 		case "opera":
-			System.setProperty("webdriver.opera.driver", "D:/operadriver.exe");
+			System.setProperty("webdriver.opera.driver", "libdrivers/operadriver64");
 			driver = new OperaDriver();
 			;
 			break;
 		case "chrome":
 			ChromeDriverService service = new ChromeDriverService.Builder()
-					.usingDriverExecutable(new File("D:\\chromedriver.exe"))
+					.usingDriverExecutable(new File("libdrivers/chromedriver.exe"))
 					.usingAnyFreePort().build();
 			service.start();
 			driver = new ChromeDriver(service);
@@ -44,7 +44,7 @@ public class DriverInit {
 			;
 			break;
 		case "ie":
-			File file = new File("D:\\IEDriverServer.exe");
+			File file = new File("libdrivers/IEDriverServer32.exe");
 			System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
 			driver = new InternetExplorerDriver();
 			;
