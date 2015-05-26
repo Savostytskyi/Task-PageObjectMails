@@ -5,10 +5,10 @@
     <classes>
       <class name="mail.MailYandexTests">
         <methods>
+          <include name="afterSuite"/>
           <include name="beforeClass"/>
           <include name="beginCreationOfLetter"/>
           <include name="loginToMail"/>
-          <include name="beforeSuite"/>
           <include name="checkTheLetter"/>
           <include name="sendTheLetter"/>
           <include name="afterClass"/>

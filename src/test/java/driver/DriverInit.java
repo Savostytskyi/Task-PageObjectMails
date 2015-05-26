@@ -18,12 +18,12 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
 public class DriverInit {
-	private String driverName = "firefox";
+
 	public WebDriver driver;
 	
 	
-  @BeforeSuite
-  public void beforeSuite() throws IOException {
+
+  public void beforeSuite(String driverName) throws IOException {
 		switch (driverName) {
 		case "firefox":
 			driver = new FirefoxDriver();

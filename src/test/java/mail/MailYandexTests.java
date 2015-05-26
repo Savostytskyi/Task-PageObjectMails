@@ -32,8 +32,14 @@ public class MailYandexTests extends DriverInit {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.get("https://mail.yandex.ua");
+		try {
+			super.beforeSuite("firefox");
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			driver.get("https://mail.yandex.ua");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
 
 	}
 

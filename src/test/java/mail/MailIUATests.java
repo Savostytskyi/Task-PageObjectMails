@@ -46,9 +46,15 @@ public class MailIUATests extends DriverInit {
 	
 
 	@BeforeClass
-	public void beforeClass() {				
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("http://www.i.ua/");
+	public void beforeClass() {		
+		try {
+			super.beforeSuite("firefox");
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			driver.get("http://www.i.ua/");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 	}
 
 	@Test(description = "Login to mail")

@@ -1,5 +1,6 @@
 package mail;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import mail.pages.gmail.DraftGmailPage;
@@ -35,8 +36,14 @@ public class MailGmailTests extends DriverInit {
 
 	@BeforeClass
 	public void beforeClass(){
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://accounts.google.com/ServiceLogin");
+		try {
+			super.beforeSuite("firefox");
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			driver.get("https://accounts.google.com/ServiceLogin");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 
 	}
 	
