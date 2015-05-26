@@ -9,30 +9,15 @@ import mail.pages.iua.SentLettersIUAPage;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.opera.OperaDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.server.handler.FindElement;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import driver.DriverInit;
-
-import java.io.File;
+import driver.WebDriverFactory;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-public class MailIUATests extends DriverInit {
+public class MailIUATests extends WebDriverFactory {
 
 	
 	private MailIUABoxPage box;
@@ -43,12 +28,13 @@ public class MailIUATests extends DriverInit {
 	private String letterTopic = "It is test letter";
 	private String letterText = "Some text for test"; 
 	private String letterAdress = "savostytskyi.anton@gmail.com";
-	
+	private WebDriverFactory webDriverFactory = new WebDriverFactory();
+	private WebDriver driver;
 
 	@BeforeClass
 	public void beforeClass() {		
 		try {
-			super.beforeSuite("firefox");
+			driver = webDriverFactory.createTariffBuilder("firefox");
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			driver.get("http://www.i.ua/");
 		} catch (IOException e) {

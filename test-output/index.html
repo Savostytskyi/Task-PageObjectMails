@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-MailSuite">
-              <span class="suite-name border-passed">MailSuite</span>
+              <span class="suite-name border-failed">MailSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods,   12 passed</span>
+                    <span class="method-stats">12 methods, 1 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-MailSuite" class="hide-methods failed suite-MailSuite"> (hide)</a> <!-- hide-methods failed suite-MailSuite -->
+                      <a href="#" panel-name="suite-MailSuite" class="show-methods failed suite-MailSuite"> (show)</a> <!-- show-methods failed suite-MailSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-MailSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MailSuite" title="mail.MailGmailTests" hash-for-method="sendTheLetter">sendTheLetter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-MailSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,12 +115,12 @@
                     <div class="method-list-content passed suite-MailSuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MailSuite" title="mail.MailGmailTests" hash-for-method="beginCreationOfLetter">beginCreationOfLetter</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-MailSuite" title="mail.MailIUATests" hash-for-method="beginCreationOfLetter">beginCreationOfLetter</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MailSuite" title="mail.MailIUATests" hash-for-method="beginCreationOfLetter">beginCreationOfLetter</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-MailSuite" title="mail.MailGmailTests" hash-for-method="beginCreationOfLetter">beginCreationOfLetter</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -116,17 +130,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MailSuite" title="mail.MailGmailTests" hash-for-method="checkTheLetter">checkTheLetter</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-MailSuite" title="mail.MailYandexTests" hash-for-method="checkTheLetter">checkTheLetter</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MailSuite" title="mail.MailGmailTests" hash-for-method="checkTheLetter">checkTheLetter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-MailSuite" title="mail.MailIUATests" hash-for-method="checkTheLetter">checkTheLetter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MailSuite" title="mail.MailIUATests" hash-for-method="loginToMail">loginToMail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -141,17 +160,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MailSuite" title="mail.MailIUATests" hash-for-method="loginToMail">loginToMail</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-MailSuite" title="mail.MailYandexTests" hash-for-method="sendTheLetter">sendTheLetter</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MailSuite" title="mail.MailGmailTests" hash-for-method="sendTheLetter">sendTheLetter</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -171,10 +180,92 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MailSuite" class="panel MailSuite">
+          <div class="suite-MailSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">mail.MailGmailTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendTheLetter">
+                  </a> <!-- sendTheLetter -->
+                  <span class="method-name">sendTheLetter</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 10.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;EPUAKHAW0236&apos;, ip: &apos;169.254.194.120&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_40&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=38.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ad3dd13c-6d1c-49d0-966a-e22fb98d4d3a
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:50)
+	at com.sun.proxy.$Proxy6.click(Unknown Source)
+	at mail.pages.gmail.SentLettersGmailPage.goToGrft(SentLettersGmailPage.java:23)
+	at mail.MailGmailTests.sendTheLetter(MailGmailTests.java:77)
+Caused by: org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;EPUAKHAW0236&apos;, ip: &apos;169.254.194.120&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_40&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.cache.getElementAt(resource://fxdriver/modules/web-element-cache.js:8953)
+	at &lt;anonymous class&gt;.Utils.getElementAt(file:///C:/Users/Anton_Savostytskyi/AppData/Local/Temp/anonymous4671447140827005342webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:8546)
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/Anton_Savostytskyi/AppData/Local/Temp/anonymous4671447140827005342webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9585)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/Anton_Savostytskyi/AppData/Local/Temp/anonymous4671447140827005342webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Anton_Savostytskyi/AppData/Local/Temp/anonymous4671447140827005342webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Anton_Savostytskyi/AppData/Local/Temp/anonymous4671447140827005342webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:603)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Send the letter)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MailSuite-class-failed -->
           <div class="suite-MailSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">mail.MailGmailTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="beginCreationOfLetter">
+                  </a> <!-- beginCreationOfLetter -->
+                  <span class="method-name">beginCreationOfLetter</span>
+                  <em>
+(Begin new letter creation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTheLetter">
+                  </a> <!-- checkTheLetter -->
+                  <span class="method-name">checkTheLetter</span>
+                  <em>
+(Checking the contains of letter)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginToMail">
+                  </a> <!-- loginToMail -->
+                  <span class="method-name">loginToMail</span>
+                  <em>
+(Login to mail)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MailSuite-class-passed -->
+          <div class="suite-MailSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">mail.MailIUATests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -219,50 +310,6 @@
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">mail.MailYandexTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="beginCreationOfLetter">
-                  </a> <!-- beginCreationOfLetter -->
-                  <span class="method-name">beginCreationOfLetter</span>
-                  <em>
-(Begin new letter creation)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkTheLetter">
-                  </a> <!-- checkTheLetter -->
-                  <span class="method-name">checkTheLetter</span>
-                  <em>
-(Checking the contains of letter)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginToMail">
-                  </a> <!-- loginToMail -->
-                  <span class="method-name">loginToMail</span>
-                  <em>
-(Login to mail)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="sendTheLetter">
-                  </a> <!-- sendTheLetter -->
-                  <span class="method-name">sendTheLetter</span>
-                  <em>
-(Send the letter)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MailSuite-class-passed -->
-          <div class="suite-MailSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">mail.MailIUATests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -361,51 +408,51 @@ data.addRows(12);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'sendTheLetter')
 data.setCell(0, 2, 'mail.MailIUATests')
-data.setCell(0, 3, 16843);
+data.setCell(0, 3, 15578);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'beginCreationOfLetter')
-data.setCell(1, 2, 'mail.MailYandexTests')
-data.setCell(1, 3, 7207);
+data.setCell(1, 1, 'sendTheLetter')
+data.setCell(1, 2, 'mail.MailGmailTests')
+data.setCell(1, 3, 11592);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'loginToMail')
 data.setCell(2, 2, 'mail.MailGmailTests')
-data.setCell(2, 3, 6781);
+data.setCell(2, 3, 7285);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'beginCreationOfLetter')
 data.setCell(3, 2, 'mail.MailGmailTests')
-data.setCell(3, 3, 6347);
+data.setCell(3, 3, 6946);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'beginCreationOfLetter')
-data.setCell(4, 2, 'mail.MailIUATests')
-data.setCell(4, 3, 5594);
+data.setCell(4, 2, 'mail.MailYandexTests')
+data.setCell(4, 3, 6735);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loginToMail')
-data.setCell(5, 2, 'mail.MailYandexTests')
-data.setCell(5, 3, 4485);
+data.setCell(5, 1, 'beginCreationOfLetter')
+data.setCell(5, 2, 'mail.MailIUATests')
+data.setCell(5, 3, 5205);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'sendTheLetter')
+data.setCell(6, 1, 'loginToMail')
 data.setCell(6, 2, 'mail.MailYandexTests')
-data.setCell(6, 3, 3597);
+data.setCell(6, 3, 4996);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'loginToMail')
 data.setCell(7, 2, 'mail.MailIUATests')
-data.setCell(7, 3, 3143);
+data.setCell(7, 3, 4076);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'sendTheLetter')
-data.setCell(8, 2, 'mail.MailGmailTests')
-data.setCell(8, 3, 2494);
+data.setCell(8, 2, 'mail.MailYandexTests')
+data.setCell(8, 3, 3435);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'checkTheLetter')
 data.setCell(9, 2, 'mail.MailGmailTests')
-data.setCell(9, 3, 1903);
+data.setCell(9, 3, 2302);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'checkTheLetter')
 data.setCell(10, 2, 'mail.MailIUATests')
-data.setCell(10, 3, 1407);
+data.setCell(10, 3, 1501);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'checkTheLetter')
 data.setCell(11, 2, 'mail.MailYandexTests')
-data.setCell(11, 3, 884);
+data.setCell(11, 3, 907);
 window.suiteTableData['MailSuite']= { tableData: data, tableDiv: 'times-div-MailSuite'}
 return data;
 }
@@ -425,23 +472,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-MailSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">mail.MailIUATests</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">afterSuite</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">mail.MailYandexTests</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">afterSuite</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-MailSuite" class="panel">
@@ -457,82 +490,80 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginToMail</span>
-                <span class="method-start">6587 ms</span>
+                <span class="method-start">7007 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">beginCreationOfLetter</span>
-                <span class="method-start">9733 ms</span>
+                <span class="method-start">11085 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkTheLetter</span>
-                <span class="method-start">15328 ms</span>
+                <span class="method-start">16291 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sendTheLetter</span>
-                <span class="method-start">16737 ms</span>
+                <span class="method-start">17793 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">33581 ms</span>
+                <span class="method-start">33372 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">mail.MailYandexTests</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">38673 ms</span>
+                <span class="method-start">39043 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginToMail</span>
-                <span class="method-start">42985 ms</span>
+                <span class="method-start">43631 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">beginCreationOfLetter</span>
-                <span class="method-start">47471 ms</span>
+                <span class="method-start">48628 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkTheLetter</span>
-                <span class="method-start">54680 ms</span>
+                <span class="method-start">55364 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sendTheLetter</span>
-                <span class="method-start">55565 ms</span>
+                <span class="method-start">56272 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">59163 ms</span>
+                <span class="method-start">59708 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">mail.MailGmailTests</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">63495 ms</span>
+                <span class="method-start">64127 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginToMail</span>
-                <span class="method-start">68890 ms</span>
+                <span class="method-start">69043 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">beginCreationOfLetter</span>
-                <span class="method-start">75672 ms</span>
+                <span class="method-start">76328 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkTheLetter</span>
-                <span class="method-start">82021 ms</span>
+                <span class="method-start">83275 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">sendTheLetter</span>
-                <span class="method-start">83925 ms</span>
+                <span class="method-start">85579 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">86420 ms</span>
+                <span class="method-start">97183 ms</span>
               </div> <!-- configuration-class after -->
-              <div class="configuration-suite after">
-                <span class="method-name">afterSuite</span>
-                <span class="method-start">89366 ms</span>
-              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -15,11 +15,11 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import driver.DriverInit;
+import driver.WebDriverFactory;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class MailYandexTests extends DriverInit {
+public class MailYandexTests extends WebDriverFactory {
 
 	private MailYandexBoxPage box;
 	private MailIYandexMainPage main;
@@ -29,11 +29,13 @@ public class MailYandexTests extends DriverInit {
 	private String letterTopic = "It is test letter";
 	private String letterText = "Some text for test"; 
 	private String letterAdress = "savostytskyi.anton@gmail.com"; 
-
+	private WebDriverFactory webDriverFactory = new WebDriverFactory();
+	private WebDriver driver;
+	
 	@BeforeClass
 	public void beforeClass() {
 		try {
-			super.beforeSuite("firefox");
+			driver = webDriverFactory.createTariffBuilder("firefox");
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			driver.get("https://mail.yandex.ua");
 		} catch (IOException e) {

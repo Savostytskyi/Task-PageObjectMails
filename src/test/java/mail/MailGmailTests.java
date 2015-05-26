@@ -21,9 +21,9 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import driver.DriverInit;
+import driver.WebDriverFactory;
 
-public class MailGmailTests extends DriverInit {
+public class MailGmailTests {
 
 	private MailGmailBoxPage box;
 	private MailGmailMainPage main;
@@ -33,11 +33,13 @@ public class MailGmailTests extends DriverInit {
 	private String letterTopic = "It is test letter";
 	private String letterText = "Some text for test"; 
 	private String letterAdress = "savostytskyi.anton@gmail.com"; 
+	private WebDriverFactory webDriverFactory = new WebDriverFactory();
+	private WebDriver driver;
 
 	@BeforeClass
 	public void beforeClass(){
 		try {
-			super.beforeSuite("firefox");
+			driver = webDriverFactory.createTariffBuilder("firefox");
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			driver.get("https://accounts.google.com/ServiceLogin");
 		} catch (IOException e) {
