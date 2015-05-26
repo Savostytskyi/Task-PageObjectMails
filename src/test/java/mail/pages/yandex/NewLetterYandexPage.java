@@ -25,13 +25,13 @@ public class NewLetterYandexPage {
 	@FindBy(xpath = "//button[@data-nb='button']//span[text()='Сохранить и перейти']")
 	private WebElement saveInDraftButton;
 	
-	@FindBy(xpath = "//a[@title='Черновики']")
+	@FindBy(xpath = ".//a[@href='#draft']")
 	private WebElement toDraftItem;
 	
 	@FindBy(xpath = "//button[@id='compose-submit']")
 	private WebElement submitButton;
 	
-	@FindBy(xpath = "//a[@href='#sent']")
+	@FindBy(xpath = ".//a[@href='#sent']")
 	private WebElement sentItem;
 
 	public NewLetterYandexPage(WebDriver driver) {
