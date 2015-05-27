@@ -1,4 +1,4 @@
-package mail.pages.yandex;
+п»їpackage mail.pages.yandex;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +11,7 @@ public class DraftYandexPage {
 	@FindBy(xpath = "//*[@id='nb-1']/span[2]")
 	private WebElement popMenuItem;
 	
-	@FindBy(xpath = "//*[@id='user-dropdown-popup']//a[@data-metric='Меню сервисов:Выход']")
+	@FindBy(xpath = "//*[@id='user-dropdown-popup']//a[@data-metric='РњРµРЅСЋ СЃРµСЂРІРёСЃРѕРІ:Р’С‹С…РѕРґ']")
 	private WebElement toMainPageButton;
 	
 	public DraftYandexPage(WebDriver driver) {

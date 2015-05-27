@@ -1,4 +1,4 @@
-package mail.pages.yandex;
+п»їpackage mail.pages.yandex;
 
 
 import org.openqa.selenium.WebDriver;
@@ -21,7 +21,7 @@ public class NewLetterYandexPage {
 	@FindBy(xpath = "//button[@id='nb-22']//span[@class='_nb-button-content']")
 	private WebElement prevButton;
 	
-	@FindBy(xpath = "//button[@data-nb='button']//span[text()='Сохранить и перейти']")
+	@FindBy(xpath = "//button[@data-nb='button']//span[text()='РЎРѕС…СЂР°РЅРёС‚СЊ Рё РїРµСЂРµР№С‚Рё']")
 	private WebElement saveInDraftButton;
 	
 	@FindBy(xpath = ".//a[@href='#draft']")
@@ -47,7 +47,7 @@ public class NewLetterYandexPage {
 		saveInDraftButton.click();
 		toDraftItem.click();
 		//(new WebDriverWait(driver, 10))
-       // .until(ExpectedConditions.titleContains("Черновики"));
+       // .until(ExpectedConditions.titleContains("Р§РµСЂРЅРѕРІРёРєРё"));
 		return new DraftYandexPage(driver);
 	}
 

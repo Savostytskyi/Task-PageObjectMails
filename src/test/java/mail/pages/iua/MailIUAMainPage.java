@@ -1,4 +1,4 @@
-package mail.pages.iua;
+п»їpackage mail.pages.iua;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,10 +13,10 @@ public class MailIUAMainPage {
 	@FindBy(xpath = "//input[@name='pass']")
 	private WebElement passwordField;
 	
-	@FindBy(xpath = "//input[@title='Вход на почту']")
+	@FindBy(xpath = "//input[@title='Р’С…РѕРґ РЅР° РїРѕС‡С‚Сѓ']")
 	private WebElement loginButton;
 	
-	@FindBy(xpath = "//a[@title='выйти']")
+	@FindBy(xpath = "//a[@title='РІС‹Р№С‚Рё']")
 	private WebElement logoutButton;
 	
 	public MailIUAMainPage(WebDriver driver) {

@@ -1,4 +1,4 @@
-package mail;
+Ôªøpackage mail;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -54,7 +54,7 @@ public class MailGmailTests {
 	public void loginToMail() {
 		main = new MailGmailMainPage(driver);
 		box = main.loginInMail("petrov.vas123321123@gmail.com", "123an123");
-		Assert.assertTrue(isElementPresent(By.xpath("//div[text()='Õ¿œ»—¿“‹']")));
+		Assert.assertTrue(isElementPresent(By.xpath("//div[text()='–ù–ê–ü–ò–°–ê–¢–¨']")));
 	}
 	
 	@Test(description = "Begin new letter creation", dependsOnMethods = { "loginToMail" })
@@ -67,7 +67,7 @@ public class MailGmailTests {
 	@Test(description = "Checking the contains of letter", dependsOnMethods = { "beginCreationOfLetter" })
 	public void checkTheLetter() {
 		letter = draft.openDraftLetter(letterTopic);
-		Assert.assertEquals(driver.findElement(By.xpath("//div[@aria-label='“ÂÎÓ ÔËÒ¸Ï‡']")).getText(), letterText);
+		Assert.assertEquals(driver.findElement(By.xpath("//div[@aria-label='–¢–µ–ª–æ –ø–∏—Å—å–º–∞']")).getText(), letterText);
 		Assert.assertEquals(driver.findElement(By.xpath("//span[@class='vN Y7BVp a3q']")).getAttribute("email"), letterAdress);
 	}
 	

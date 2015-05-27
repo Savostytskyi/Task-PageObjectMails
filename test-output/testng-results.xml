@@ -1,37 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="12" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32087" started-at="2015-05-27T15:08:43Z" finished-at="2015-05-27T15:09:15Z">
+  <suite name="MailSuite" duration-ms="96521" started-at="2015-05-27T15:44:27Z" finished-at="2015-05-27T15:46:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32087" started-at="2015-05-27T15:08:43Z" finished-at="2015-05-27T15:09:15Z">
-      <class name="mail.MailGmailTests">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:mail.MailGmailTests@1b0375b3]" name="beforeClass" is-config="true" duration-ms="7081" started-at="2015-05-27T18:08:43Z" finished-at="2015-05-27T18:08:50Z">
+    <test name="mails" duration-ms="96521" started-at="2015-05-27T15:44:27Z" finished-at="2015-05-27T15:46:04Z">
+      <class name="mail.MailIUATests">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:mail.MailIUATests@6e8dacdf]" name="beforeClass" is-config="true" duration-ms="10300" started-at="2015-05-27T18:44:27Z" finished-at="2015-05-27T18:44:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="loginToMail()[pri:0, instance:mail.MailGmailTests@1b0375b3]" name="loginToMail" duration-ms="9260" started-at="2015-05-27T18:08:50Z" description="Login to mail" finished-at="2015-05-27T18:08:59Z">
+        <test-method status="PASS" signature="loginToMail()[pri:0, instance:mail.MailIUATests@6e8dacdf]" name="loginToMail" duration-ms="3448" started-at="2015-05-27T18:44:37Z" description="Login to mail" finished-at="2015-05-27T18:44:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToMail -->
-        <test-method status="PASS" signature="beginCreationOfLetter()[pri:0, instance:mail.MailGmailTests@1b0375b3]" name="beginCreationOfLetter" duration-ms="7195" started-at="2015-05-27T18:08:59Z" description="Begin new letter creation" depends-on-methods="mail.MailGmailTests.loginToMail" finished-at="2015-05-27T18:09:06Z">
+        <test-method status="PASS" signature="beginCreationOfLetter()[pri:0, instance:mail.MailIUATests@6e8dacdf]" name="beginCreationOfLetter" duration-ms="6452" started-at="2015-05-27T18:44:41Z" description="Begin new letter creation" depends-on-methods="mail.MailIUATests.loginToMail" finished-at="2015-05-27T18:44:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginCreationOfLetter -->
-        <test-method status="PASS" signature="checkTheLetter()[pri:0, instance:mail.MailGmailTests@1b0375b3]" name="checkTheLetter" duration-ms="2026" started-at="2015-05-27T18:09:06Z" description="Checking the contains of letter" depends-on-methods="mail.MailGmailTests.beginCreationOfLetter" finished-at="2015-05-27T18:09:08Z">
+        <test-method status="PASS" signature="checkTheLetter()[pri:0, instance:mail.MailIUATests@6e8dacdf]" name="checkTheLetter" duration-ms="1653" started-at="2015-05-27T18:44:47Z" description="Checking the contains of letter" depends-on-methods="mail.MailIUATests.beginCreationOfLetter" finished-at="2015-05-27T18:44:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTheLetter -->
-        <test-method status="PASS" signature="sendTheLetter()[pri:0, instance:mail.MailGmailTests@1b0375b3]" name="sendTheLetter" duration-ms="3002" started-at="2015-05-27T18:09:08Z" description="Send the letter" depends-on-methods="mail.MailGmailTests.checkTheLetter" finished-at="2015-05-27T18:09:11Z">
+        <test-method status="PASS" signature="sendTheLetter()[pri:0, instance:mail.MailIUATests@6e8dacdf]" name="sendTheLetter" duration-ms="15907" started-at="2015-05-27T18:44:49Z" description="Send the letter" depends-on-methods="mail.MailIUATests.checkTheLetter" finished-at="2015-05-27T18:45:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendTheLetter -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:mail.MailGmailTests@1b0375b3]" name="afterClass" is-config="true" duration-ms="3495" started-at="2015-05-27T18:09:11Z" finished-at="2015-05-27T18:09:15Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:mail.MailIUATests@6e8dacdf]" name="afterClass" is-config="true" duration-ms="5472" started-at="2015-05-27T18:45:05Z" finished-at="2015-05-27T18:45:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- mail.MailIUATests -->
+      <class name="mail.MailYandexTests">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:mail.MailYandexTests@7a79be86]" name="beforeClass" is-config="true" duration-ms="4868" started-at="2015-05-27T18:45:10Z" finished-at="2015-05-27T18:45:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="loginToMail()[pri:0, instance:mail.MailYandexTests@7a79be86]" name="loginToMail" duration-ms="4958" started-at="2015-05-27T18:45:15Z" description="Login to mail" finished-at="2015-05-27T18:45:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToMail -->
+        <test-method status="PASS" signature="beginCreationOfLetter()[pri:0, instance:mail.MailYandexTests@7a79be86]" name="beginCreationOfLetter" duration-ms="3824" started-at="2015-05-27T18:45:20Z" description="Begin new letter creation" depends-on-methods="mail.MailYandexTests.loginToMail" finished-at="2015-05-27T18:45:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginCreationOfLetter -->
+        <test-method status="PASS" signature="checkTheLetter()[pri:0, instance:mail.MailYandexTests@7a79be86]" name="checkTheLetter" duration-ms="961" started-at="2015-05-27T18:45:24Z" description="Checking the contains of letter" depends-on-methods="mail.MailYandexTests.beginCreationOfLetter" finished-at="2015-05-27T18:45:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTheLetter -->
+        <test-method status="PASS" signature="sendTheLetter()[pri:0, instance:mail.MailYandexTests@7a79be86]" name="sendTheLetter" duration-ms="3789" started-at="2015-05-27T18:45:25Z" description="Send the letter" depends-on-methods="mail.MailYandexTests.checkTheLetter" finished-at="2015-05-27T18:45:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendTheLetter -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:mail.MailYandexTests@7a79be86]" name="afterClass" is-config="true" duration-ms="5211" started-at="2015-05-27T18:45:29Z" finished-at="2015-05-27T18:45:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- mail.MailYandexTests -->
+      <class name="mail.MailGmailTests">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:mail.MailGmailTests@7c75222b]" name="beforeClass" is-config="true" duration-ms="5307" started-at="2015-05-27T18:45:34Z" finished-at="2015-05-27T18:45:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="loginToMail()[pri:0, instance:mail.MailGmailTests@7c75222b]" name="loginToMail" duration-ms="8928" started-at="2015-05-27T18:45:39Z" description="Login to mail" finished-at="2015-05-27T18:45:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToMail -->
+        <test-method status="PASS" signature="beginCreationOfLetter()[pri:0, instance:mail.MailGmailTests@7c75222b]" name="beginCreationOfLetter" duration-ms="6923" started-at="2015-05-27T18:45:48Z" description="Begin new letter creation" depends-on-methods="mail.MailGmailTests.loginToMail" finished-at="2015-05-27T18:45:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginCreationOfLetter -->
+        <test-method status="PASS" signature="checkTheLetter()[pri:0, instance:mail.MailGmailTests@7c75222b]" name="checkTheLetter" duration-ms="1938" started-at="2015-05-27T18:45:55Z" description="Checking the contains of letter" depends-on-methods="mail.MailGmailTests.beginCreationOfLetter" finished-at="2015-05-27T18:45:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTheLetter -->
+        <test-method status="PASS" signature="sendTheLetter()[pri:0, instance:mail.MailGmailTests@7c75222b]" name="sendTheLetter" duration-ms="3178" started-at="2015-05-27T18:45:57Z" description="Send the letter" depends-on-methods="mail.MailGmailTests.checkTheLetter" finished-at="2015-05-27T18:46:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendTheLetter -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:mail.MailGmailTests@7c75222b]" name="afterClass" is-config="true" duration-ms="3366" started-at="2015-05-27T18:46:00Z" finished-at="2015-05-27T18:46:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- mail.MailGmailTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- mails -->
+  </suite> <!-- MailSuite -->
 </testng-results>

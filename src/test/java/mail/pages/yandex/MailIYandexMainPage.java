@@ -1,4 +1,4 @@
-package mail.pages.yandex;
+ï»¿package mail.pages.yandex;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,7 +13,7 @@ public class MailIYandexMainPage {
 	@FindBy(xpath = "//label[@id='nb-2']/span/input")
 	private WebElement passwordField;
 	
-	@FindBy(xpath = "//span[text()='Âîéòè']")
+	@FindBy(xpath = "//span[text()='Ð’Ð¾Ð¹Ñ‚Ð¸']")
 	private WebElement loginButton;
 	
 	public MailIYandexMainPage(WebDriver driver) {

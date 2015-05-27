@@ -17,6 +17,5 @@ public class SentLettersYandexPage {
 
 	public void goToGrft() {
 		toDraftItem.click();
-		//driver.findElement(By.xpath("//a[@title='Черновики']")).click();	
 	}
 }

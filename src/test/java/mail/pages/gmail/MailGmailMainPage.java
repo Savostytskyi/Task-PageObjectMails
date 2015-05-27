@@ -1,4 +1,4 @@
-package mail.pages.gmail;
+п»їpackage mail.pages.gmail;
 
 
 
@@ -20,13 +20,13 @@ public class MailGmailMainPage {
 	@FindBy(xpath = "//input[@id='signIn']")
 	private WebElement loginButton;
 	
-	@FindBy(xpath = "//a[@title='выйти']")
+	@FindBy(xpath = "//a[@title='РІС‹Р№С‚Рё']")
 	private WebElement logoutButton;
 	
-	@FindBy(xpath = "//a[@title='Сервисы']")
+	@FindBy(xpath = "//a[@title='РЎРµСЂРІРёСЃС‹']")
 	private WebElement servicesButton;
 	
-	@FindBy(xpath = "//span[text()='Почта']")
+	@FindBy(xpath = "//span[text()='РџРѕС‡С‚Р°']")
 	private WebElement mailButton;
 	
 	public MailGmailMainPage(WebDriver driver) {
@@ -42,7 +42,7 @@ public class MailGmailMainPage {
 		mailButton.click();
 
 		(new WebDriverWait(driver, 20))
-	       .until(ExpectedConditions.titleContains("Входящие"));
+	       .until(ExpectedConditions.titleContains("Р’С…РѕРґСЏС‰РёРµ"));
 		return new MailGmailBoxPage(driver);
 	}
 

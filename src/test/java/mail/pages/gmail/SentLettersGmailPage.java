@@ -1,4 +1,4 @@
-package mail.pages.gmail;
+ï»¿package mail.pages.gmail;
 
 
 import org.openqa.selenium.WebDriver;
@@ -22,6 +22,6 @@ public class SentLettersGmailPage {
 	public void goToGrft() {
 		toDraftItem.click();
 		(new WebDriverWait(driver, 20))
-	       .until(ExpectedConditions.titleContains("×åğíîâèêè"));
+	       .until(ExpectedConditions.titleContains("Ğ§ĞµÑ€Ğ½Ğ¾Ğ²Ğ¸ĞºĞ¸"));
 	}
 }

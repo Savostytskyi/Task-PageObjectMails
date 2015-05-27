@@ -1,4 +1,4 @@
-package mail.pages.gmail;
+Ôªøpackage mail.pages.gmail;
 
 
 import org.openqa.selenium.WebDriver;
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 public class MailGmailBoxPage {
 	private WebDriver driver;
 	
-	@FindBy(xpath = "//div[text()='Õ¿œ»—¿“‹']")
+	@FindBy(xpath = "//div[text()='–ù–ê–ü–ò–°–ê–¢–¨']")
 	private WebElement newLetterButton;
 	
 	public MailGmailBoxPage(WebDriver driver) {
