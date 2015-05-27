@@ -17,7 +17,6 @@ public class MailYandexBoxPage {
 
 	public NewLetterYandexPage chouseNewLetter() {
 		newLetterButton.click();
-		//driver.findElement(By.xpath(".//*[@id='js-page']//img[@class='b-ico b-ico_compose']")).click();
 		return new NewLetterYandexPage(driver);
 	}
 

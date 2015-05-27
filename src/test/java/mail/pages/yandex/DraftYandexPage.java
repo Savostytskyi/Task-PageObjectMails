@@ -27,8 +27,6 @@ public class DraftYandexPage {
 	public MailIYandexMainPage goToMainPage() {
 		popMenuItem.click();
 		toMainPageButton.click();
-		//driver.findElement(By.xpath("//*[@id='nb-1']/span[2]")).click();
-		//driver.findElement(By.xpath("//*[@id='user-dropdown-popup']//a[@data-metric='Меню сервисов:Выход']")).click();
 		return new MailIYandexMainPage(driver);
 	}
 

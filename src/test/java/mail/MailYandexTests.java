@@ -32,7 +32,6 @@ public class MailYandexTests extends WebDriverFactory {
 	private WebDriverFactory webDriverFactory = new WebDriverFactory();
 	private WebDriver driver;
 	
-	//firefox,
 	@BeforeClass
 	public void beforeClass() {
 		try {

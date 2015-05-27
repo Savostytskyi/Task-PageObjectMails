@@ -36,7 +36,7 @@ public class MailGmailTests {
 	private WebDriverFactory webDriverFactory = new WebDriverFactory();
 	private WebDriver driver;
 
-//firefox, chrome, ie,	
+
 	@BeforeClass
 	public void beforeClass(){
 		try {

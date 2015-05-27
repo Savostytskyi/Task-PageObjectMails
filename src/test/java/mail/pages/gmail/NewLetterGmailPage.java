@@ -1,6 +1,5 @@
 package mail.pages.gmail;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,8 +25,7 @@ public class NewLetterGmailPage {
 	
 	@FindBy(xpath = "//a[text()='Отправленные']")
 	private WebElement sentLettersItem;
-	
-	//@FindBy(xpath = "//*[@id=':55']/div/div[1]/span/a")
+
 	@FindBy(xpath = "(//a[@aria-label])[3]")
 	private WebElement toDraftItem;
 
