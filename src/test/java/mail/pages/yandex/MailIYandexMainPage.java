@@ -26,9 +26,6 @@ public class MailIYandexMainPage {
 		loginField.sendKeys(login);
 		passwordField.sendKeys(password);
 		loginButton.click();
-		//driver.findElement(By.xpath("//label[@id='nb-1']/span/input")).sendKeys(login);
-		//driver.findElement(By.xpath("//label[@id='nb-2']/span/input")).sendKeys(password);		
-		//driver.findElement(By.xpath("//span[text()='Войти']")).click();
 		return new MailYandexBoxPage(driver);
 	}	
 

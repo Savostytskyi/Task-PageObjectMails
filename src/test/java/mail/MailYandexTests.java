@@ -32,12 +32,13 @@ public class MailYandexTests extends WebDriverFactory {
 	private WebDriverFactory webDriverFactory = new WebDriverFactory();
 	private WebDriver driver;
 	
+	//firefox,
 	@BeforeClass
 	public void beforeClass() {
 		try {
 			driver = webDriverFactory.createTariffBuilder("firefox");
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-			driver.get("https://mail.yandex.ua");
+			driver.get("https://mail.yandex.ru");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

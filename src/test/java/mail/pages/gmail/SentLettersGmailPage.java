@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class SentLettersGmailPage {
 	private WebDriver driver;
 	
-	@FindBy(xpath = "//*[@id=':55']/div/div[1]/span/a")
+	@FindBy(xpath = "(//a[@aria-label])[3]")
 	private WebElement toDraftItem;
 
 	public SentLettersGmailPage(WebDriver driver) {

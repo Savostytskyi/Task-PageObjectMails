@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [MailSuite]">
-  <test name="mails(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
       <class name="mail.MailGmailTests">
         <methods>
@@ -13,18 +13,6 @@
           <include name="afterClass"/>
         </methods>
       </class> <!-- mail.MailGmailTests -->
-      <class name="mail.MailIUATests">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- mail.MailIUATests -->
-      <class name="mail.MailYandexTests">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- mail.MailYandexTests -->
     </classes>
-  </test> <!-- mails(failed) -->
-</suite> <!-- Failed suite [MailSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

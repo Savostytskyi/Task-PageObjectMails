@@ -31,12 +31,15 @@ public class MailIUATests extends WebDriverFactory {
 	private WebDriverFactory webDriverFactory = new WebDriverFactory();
 	private WebDriver driver;
 
+	//chrome, firefox,
+	
 	@BeforeClass
 	public void beforeClass() {		
 		try {
-			driver = webDriverFactory.createTariffBuilder("firefox");
+			driver = webDriverFactory.createTariffBuilder("opera");
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			driver.get("http://www.i.ua/");
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

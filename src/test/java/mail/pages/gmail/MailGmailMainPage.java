@@ -40,11 +40,7 @@ public class MailGmailMainPage {
 		loginButton.click();
 		servicesButton.click();
 		mailButton.click();
-		//driver.findElement(By.xpath("//input[@id='Email']")).sendKeys(login);
-		//driver.findElement(By.xpath("//input[@id='Passwd']")).sendKeys(password);
-		//driver.findElement(By.xpath("//input[@id='signIn']")).click();		
-		//driver.findElement(By.xpath("//a[@title='Сервисы']")).click();
-		//driver.findElement(By.xpath("//span[text()='Почта']")).click();
+
 		(new WebDriverWait(driver, 20))
 	       .until(ExpectedConditions.titleContains("Входящие"));
 		return new MailGmailBoxPage(driver);
@@ -52,7 +48,7 @@ public class MailGmailMainPage {
 
 	public void logOut() {
 		logoutButton.click();
-		//driver.findElement(By.xpath("//a[@title='выйти']")).click();		
+
 	}
 	
 	
